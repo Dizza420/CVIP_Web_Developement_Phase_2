@@ -30,7 +30,7 @@ body{
 }
 
 .nav{
-    background-color: #151a20;
+    background-color: #100d13;
     min-width:100vw;
     height: fit-content;
     color: aliceblue;
@@ -43,15 +43,15 @@ body{
 }
 
 .nav-title{
-    color: rgb(116, 246, 149);
-    transition: text-shadow 1s;
+    color: rgb(196, 146, 249);
+    transition: text-shadow 1s,color 0.9s;;
 }
 
 
 .nav-title:hover{
     transition: text-shadow 1s , color 0.9s;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(190, 255, 220);
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
 }
 .nav ul{
     list-style-type: none ;
@@ -65,13 +65,16 @@ body{
 
 .nav a{
     text-decoration: none;
-    color: rgb(116, 246, 149);
+    font-size: 20px;
+    background:linear-gradient(to bottom,rgb(69, 42, 99), rgb(170, 117, 228));
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
-
 .nav li:hover{
-    border-bottom:3px solid rgb(160, 255, 184) ;
+    border-bottom:3px solid rgb(157, 93, 226);
 }
 
 .wrapper{
@@ -85,7 +88,7 @@ body{
     display: flex;
     font-family: 'Poppins',sans-serif;
     margin: 20px;
-    color: rgb(116, 246, 149);
+    color: rgb(125, 74, 180);
     justify-content: center;
     align-items: center;
     gap:100px;
@@ -94,6 +97,30 @@ body{
 .sec-1-left{
     margin: 20px;
     width: fit-content;
+}
+
+.sec-1-left a{
+    display: block;
+    color: rgb(166, 108, 227) ;
+    text-decoration: none;
+    width: fit-content;
+    font-size: 15px;
+    padding: 7px;
+    margin: 15px 0;
+    border: 1px solid rgb(125, 74, 180);
+    transition: text-shadow 1s , color 0.9s;
+    
+}
+
+.sec-1-left a:hover{
+    transition: text-shadow 1s , color 0.9s;
+    color: aliceblue;
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+}
+
+.sec-1-left pre{
+    display: inline;
+    color: rgb(200, 155, 249) ;
 }
 
 .sec-1-right img{
@@ -110,7 +137,7 @@ body{
 .sec-2-title{
     font-family: 'Poppins',sans-serif;
     font-size: 25px;
-    color: rgb(116, 246, 149);
+    color: rgb(125, 74, 180);
 }
 
 .sec-2-p-1{
@@ -124,7 +151,7 @@ body{
 }
 
 .sec-2-p-1-left{
-    color:rgb(116, 246, 149) ;
+    color:rgb(125, 74, 180);
     font-size: 20px;
     font-weight: 400;
     width: 350px;
@@ -133,7 +160,7 @@ body{
 
 
 .coderscave{
-    color:rgb(116, 246, 149) ;
+    color:rgb(184, 133, 239);
 }
 
 .link-wrap{
@@ -143,9 +170,9 @@ body{
 .sec-2-p-1-left-link{
     display: inline;
     text-decoration: none;
-    color: rgb(116, 246, 149);
+    color: rgb(166, 108, 227);
     width: fit-content;
-    border: 1px solid rgb(116, 246, 149);
+    border: 1px solid rgb(125, 74, 180);
     margin:20px 0 ;
     padding: 5px 10px;
     transition: text-shadow 1s , color 0.9s;
@@ -154,19 +181,24 @@ body{
 .sec-2-p-1-left-link:hover{
     transition: text-shadow 1s , color 0.9s;
     color: aliceblue;
-    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(190, 255, 220);
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
 }
 
 #typing{
-    color: rgb(180, 248, 197);
+    color: rgb(200, 155, 249);
     transition: text-shadow 1s;
 }
+
+.typed-cursor {
+    color:rgb(200, 155, 249) ;
+}
+
 
 
 #typing:hover{
     transition: text-shadow 1s , color 0.9s;
     color: aliceblue;
-    text-shadow: 2px 2px 30px white,2px 2px 20px rgb(190, 255, 220);
+    text-shadow: 2px 2px 30px rgb(255, 255, 255),2px 2px 30px rgb(169, 119, 223);
 }
 @media screen and (max-width:954px){
     .nav{
@@ -187,7 +219,7 @@ body{
     }
 
     .nav-title{
-        text-shadow: 2px 2px 10px white,2px 2px 30px rgb(190, 255, 220);
+        text-shadow: 2px 2px 10px white,2px 2px 30px purple;
         color: white;
     }
     .sec-1{
@@ -229,10 +261,22 @@ body{
     .sec-2-p-1-left-link{
         display: block;
         color: aliceblue;
-        text-shadow: 2px 2px 10px white,2px 2px 30px rgb(190, 255, 220);
+        text-shadow: 2px 2px 10px white,2px 2px 30px purple;
     }
 
     .sec-2-p-1-right img{
         scale:0.7;
     }
+
+    .sec-1-left a{
+        color: aliceblue;
+        text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+          
+    }
+    .resume-link{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+     
 }
