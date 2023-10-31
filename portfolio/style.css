@@ -12,11 +12,12 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(74, 74, 74);
+    background-color:rgb(125, 74, 180);
 }
 
-html,body{
+html{
     overflow-x: hidden;
+    
 }
 
 *{
@@ -25,7 +26,8 @@ html,body{
     
 }
 body{
-    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
     font-family: 'Poppins',sans-serif;
 }
 
@@ -61,6 +63,7 @@ body{
 .nav ul li {
     display: inline;
     padding: 10px;
+
 }
 
 .nav a{
@@ -109,7 +112,6 @@ body{
     margin: 15px 0;
     border: 1px solid rgb(125, 74, 180);
     transition: text-shadow 1s , color 0.9s;
-    
 }
 
 .sec-1-left a:hover{
@@ -199,6 +201,75 @@ body{
     transition: text-shadow 1s , color 0.9s;
     color: aliceblue;
     text-shadow: 2px 2px 30px rgb(255, 255, 255),2px 2px 30px rgb(169, 119, 223);
+}
+
+
+.webform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(125, 74, 180) ;
+    margin-top: 100px;
+}
+
+.webform form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: rgb(23, 18, 39);
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.webform form h3{
+    text-align: center;
+}
+
+.webform input{
+    background-color: black;
+    border: none;
+    min-width: 300px;
+    color: rgb(93, 62, 128);
+}
+
+.webform textarea{
+    background-color: black;
+    border: none;
+    resize:none;
+    color: rgb(93, 62, 128);
+    min-height: 200px;
+}
+
+.webform form label{
+    margin: 10px 0;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(125, 74, 180) ;
+}
+
+.socials ul{
+    list-style-type: none;
+}
+
+.socials ul li{
+    padding: 10px;
+    display: inline;
+}
+
+.footer{
+    justify-content: center;
+    padding: 20px 0 0 0;
+    background-color: black;
+}
+
+.footer-text{
+    color:rgb(93, 74, 113) ;
+    text-align: center;
+    padding: 50px;
 }
 @media screen and (max-width:954px){
     .nav{
