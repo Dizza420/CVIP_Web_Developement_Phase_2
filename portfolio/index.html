@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     
 </head>
-<body>
+<body style="background-color: rgb(0,0,0);">
     <div class="nav">
         <div class="nav-title">
             My Portfolio
@@ -20,6 +20,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact Me</a></li>
                 <li><a href="#">Resume</a></li>
+                <li><a onclick="togglemode()">Light/Dark</a></li>
             </ul>
         </div>
     </div>
@@ -30,7 +31,7 @@
                 Hi My name is Adrija and I am a 
                 <br>
                 <pre><</pre><span id="typing"></span><pre>/></pre>
-                <div class="resume-link"><a href="#">Get Resume</a></div>
+                <div class="resume-link"><a href="#" class="resume-link-attr">Get Resume</a></div>
             </div>
             <div class="sec-1-right">
                 <img src="./assets/dev.png">
@@ -60,8 +61,31 @@
     
     </div>
 
+    <div class="webform">
+        <form action="">
+            <h3>Lets get in touch</h3>
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" placeholder="John Doe">
+            <label for="phno">Phone No</label>
+            <input type="tel" id="phno">
+            <label for="desc">Description</label>
+            <textarea type="" id="desc"></textarea>
+        </form>
+
+    </div>
 
 
+    <div class="footer">
+        <div class="socials">
+            <ul>
+                <li>Github</li>
+                <li>LinkedIn</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        
+        <div class="footer-text">Made with ❤️ by Adrija Sarkar</div>
+    </div>
     <script  src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./script.js"></script>
 </body>
