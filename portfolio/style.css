@@ -12,15 +12,14 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color:rgb(125, 74, 180);
+    background-color:rgb(75, 124, 179);
     border-radius: 10px;
     transition: box-shadow 1s , background-color 0.9s;
 }   
 
 ::-webkit-scrollbar-thumb:hover{
     transition: box-shadow 1s , background-color 0.9s;
-    background-color: rgb(201, 165, 239);
-    box-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+    background-color: rgb(162, 202, 249);
 }
 
 html{
@@ -37,7 +36,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Poppins',sans-serif;
-    background: black;
+    background: rgb(8, 12, 17);
 }
 
 .nav{
@@ -55,7 +54,7 @@ body{
 }
 
 .nav-title{
-    color: rgb(196, 146, 249);
+    color: rgb(162, 202, 249);
     transition: text-shadow 1s,color 0.9s;;
 }
 
@@ -63,7 +62,7 @@ body{
 .nav-title:hover{
     transition: text-shadow 1s , color 0.9s;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(75, 124, 179);
 }
 .nav ul{
     list-style-type: none ;
@@ -79,14 +78,14 @@ body{
 .nav a{
     text-decoration: none;
     font-size: 20px;
-    color: rgb(157, 93, 226);
+    color: rgb(75, 124, 179);
     transition: text-shadow 1s,color 1s;
 }
 
 
 .nav a:hover{
     transition: text-shadow 1s,color 1s;
-    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(96, 150, 211);
     color: white;
 }
 
@@ -101,14 +100,14 @@ body{
     display: flex;
     font-family: 'Poppins',sans-serif;
     padding: 20px;
-    color: rgb(125, 74, 180);
+    color: rgb(75, 124, 179);
     justify-content: center;
     align-items: center;
     gap:100px;
-    background-image: linear-gradient(to top,black,rgba(11, 9, 13, 0.683),rgba(11, 9, 13, 0.683)),url("./assets/dev.jpg");
-    background-size: cover;
     height: 500px;
 }
+
+
 
 .sec-1-left{
     font-size: 30px;
@@ -117,27 +116,33 @@ body{
     
 }
 
+.resume-link{
+    margin: 20px 10px;
+}
+
 .sec-1-left a{
     display: block;
-    color: rgb(166, 108, 227) ;
+    color: rgb(75, 124, 179) ;
     text-decoration: none;
     width: fit-content;
     font-size: 15px;
     padding: 7px;
-    margin: 15px 0;
-    border: 1px solid rgb(125, 74, 180);
+    scale: 1.2;
+    border-radius: 3px;
+    
+    border: 1px solid rgb(75, 124, 179);
     transition: text-shadow 1s , color 0.9s;
 }
 
 .sec-1-left a:hover{
     transition: text-shadow 1s , color 0.9s;
     color: aliceblue;
-    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(75, 124, 179);
 }
 
 .sec-1-left pre{
     display: inline;
-    color: rgb(200, 155, 249) ;
+    color: rgb(162, 202, 249) ;
 }
 
 .sec-1-right img{
@@ -155,13 +160,14 @@ body{
 .sec-2-title{
     font-family: 'Poppins',sans-serif;
     font-size: 25px;
-    color: rgb(125, 74, 180);
+    color: rgb(75, 124, 179);
 }
 
 .sec-2-p-1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25px 0;
 }
 .sec-2-p-1 img{
     height: 250px;
@@ -169,7 +175,7 @@ body{
 }
 
 .sec-2-p-1-left{
-    color:rgb(125, 74, 180);
+    color:rgb(75, 124, 179);
     font-size: 20px;
     font-weight: 400;
     width: 350px;
@@ -178,7 +184,8 @@ body{
 
 
 .coderscave{
-    color:rgb(184, 133, 239);
+    color:rgb(162, 202, 249) ;
+    text-decoration:none;
 }
 
 .link-wrap{
@@ -188,10 +195,11 @@ body{
 .sec-2-p-1-left-link{
     display: inline;
     text-decoration: none;
-    color: rgb(166, 108, 227);
+    color: rgb(75, 124, 179);
     width: fit-content;
-    border: 1px solid rgb(125, 74, 180);
+    border: 1px solid rgb(75, 124, 179);
     margin:20px 0 ;
+    border-radius: 3px;
     padding: 5px 10px;
     transition: text-shadow 1s , color 0.9s;
 }
@@ -199,16 +207,16 @@ body{
 .sec-2-p-1-left-link:hover{
     transition: text-shadow 1s , color 0.9s;
     color: aliceblue;
-    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(75, 124, 179);
 }
 
 #typing{
-    color: rgb(200, 155, 249);
+    color: rgb(162, 202, 249);
     transition: text-shadow 1s;
 }
 
 .typed-cursor {
-    color:rgb(200, 155, 249) ;
+    color:rgb(162, 202, 249) ;
 }
 
 
@@ -216,23 +224,52 @@ body{
 #typing:hover{
     transition: text-shadow 1s , color 0.9s;
     color: aliceblue;
-    text-shadow: 2px 2px 30px rgb(255, 255, 255),2px 2px 30px rgb(169, 119, 223);
+    text-shadow: 2px 2px 30px rgb(255, 255, 255),2px 2px 30px rgb(75, 124, 179);
 }
 
 
-.webform{
+
+
+.sec-3-text{
     display: flex;
+    margin: 20px 0;
     justify-content: center;
     align-items: center;
-    color:rgb(125, 74, 180) ;
+    gap: 100px;
+}
+
+.sec-3-title{
+    text-align: center;
+    color:rgb(75, 124, 179) ;
+    font-size: 25px;
+}
+
+.sec-3-left{
+    height: 250px;
+    scale: 1.2;
+}
+
+.sec-3-right{
+    color:rgb(75, 124, 179) ;
+    width: 350px;
+    font-size: 20px;
+}
+
+.webform{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color:rgb(75, 124, 179) ;
     margin-top: 100px;
 }
 
 .webform form{
     display: flex;
+    
     flex-direction: column;
     margin: 20px;
-    background-color: rgb(27, 20, 41);
+    background-color: rgb(18, 22, 28);
     padding: 30px;
     border-radius: 3px;
 }
@@ -244,16 +281,25 @@ body{
 .webform input{
     background-color: black;
     border: none;
+    padding: 15px 5px;
     min-width: 300px;
     color: rgb(93, 62, 128);
+    font-family: 'Poppins',sans-serif;
+}
+
+.webform input::placeholder{
+    color: rgb(53, 66, 80);
+    font-family: 'Poppins',sans-serif;
 }
 
 .webform textarea{
     background-color: black;
+    padding: 15px 5px;
     border: none;
     resize:none;
-    color: rgb(93, 62, 128);
+    color: rgb(76, 105, 138);
     min-height: 200px;
+    font-family: 'Poppins',sans-serif;
 }
 
 .webform form label{
@@ -264,7 +310,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(125, 74, 180) ;
+    color:rgb(75, 124, 179) ;
 }
 
 .submit-wrap{
@@ -275,8 +321,8 @@ body{
 
 .submit{
     background-color: transparent;
-    border: 1px solid rgb(125, 74, 180) ;
-    color: rgb(125, 74, 180) ;
+    border: 1px solid rgb(75, 124, 179) ;
+    color: rgb(75, 124, 179) ;
     width: fit-content;
     margin: 20px 0;
     font-family: 'Poppins',sans-serif;
@@ -288,7 +334,7 @@ body{
 .submit:hover{
     transition: text-shadow 1s , color 0.9s;
     color: aliceblue;
-    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(75, 124, 179);
 }
 
 .socials ul{
@@ -307,10 +353,16 @@ body{
 }
 
 .footer-text{
-    color:rgb(93, 74, 113) ;
+    color:rgb(46, 75, 109) ;
     text-align: center;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
 @media screen and (max-width:954px){
     .nav{
         flex-direction: column;
@@ -330,12 +382,14 @@ body{
     }
 
     .nav-title{
-        text-shadow: 2px 2px 10px white,2px 2px 30px purple;
+        text-shadow: 2px 2px 10px white,2px 2px 30px rgb(96, 150, 211);
         color: white;
     }
     .sec-1{
+        margin: 50px 0;
         flex-direction: column;
         gap: 30px;
+        text-align: center;
     }
 
     .sec-1-left{
@@ -381,13 +435,22 @@ body{
 
     .sec-1-left a{
         color: aliceblue;
-        text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+        text-shadow: 2px 2px 10px white,2px 2px 30px rgb(75, 124, 179);
           
     }
-    .resume-link{
-        display: flex;
-        justify-content: center;
-        align-items: center; 
+    
+    .sec-3-text{
+        flex-direction: column;
+        gap:30px;
     }
-     
+
+    .sec-3-right{
+        width: 450px;
+    }
+     .resume-link{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 25px 0;
+}
 }
