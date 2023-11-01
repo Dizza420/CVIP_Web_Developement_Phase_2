@@ -6,13 +6,21 @@
 }
 
 ::-webkit-scrollbar{
-    background-color: transparent;
+    background-color: black;
     max-height:10px;
     max-width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color:rgb(125, 74, 180);
+    border-radius: 10px;
+    transition: box-shadow 1s , background-color 0.9s;
+}   
+
+::-webkit-scrollbar-thumb:hover{
+    transition: box-shadow 1s , background-color 0.9s;
+    background-color: rgb(201, 165, 239);
+    box-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
 }
 
 html{
@@ -29,15 +37,17 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Poppins',sans-serif;
+    background: black;
 }
 
 .nav{
-    background-color: #100d13;
+    background-color: #000000;
     min-width:100vw;
     height: fit-content;
+    border-radius:0 0 20px 20px;
     color: aliceblue;
     display: flex;
-    padding: 30px 10px 10px 10px;
+    padding: 30px 10px 30px 10px;
     font-family:'Poppins', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -70,12 +80,14 @@ body{
     text-decoration: none;
     font-size: 20px;
     color: rgb(157, 93, 226);
+    transition: text-shadow 1s,color 1s;
 }
 
 
-
-.nav li:hover{
-    border-bottom:3px solid rgb(157, 93, 226);
+.nav a:hover{
+    transition: text-shadow 1s,color 1s;
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
+    color: white;
 }
 
 .wrapper{
@@ -88,16 +100,21 @@ body{
     font-size: 25px;
     display: flex;
     font-family: 'Poppins',sans-serif;
-    margin: 20px;
+    padding: 20px;
     color: rgb(125, 74, 180);
     justify-content: center;
     align-items: center;
     gap:100px;
+    background-image: linear-gradient(to top,black,rgba(11, 9, 13, 0.683),rgba(11, 9, 13, 0.683)),url("./assets/aryan-dhiman-iGLLtLINSkw-unsplash.jpg");
+    background-size: cover;
+    height: 500px;
 }
 
 .sec-1-left{
+    font-size: 30px;
     margin: 20px;
     width: fit-content;
+    
 }
 
 .sec-1-left a{
@@ -128,6 +145,7 @@ body{
 }
 
 .sec-2{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +232,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: rgb(23, 18, 39);
+    background-color: rgb(27, 20, 41);
     padding: 30px;
     border-radius: 3px;
 }
@@ -247,6 +265,30 @@ body{
     justify-content: center;
     align-items: center;
     color:rgb(125, 74, 180) ;
+}
+
+.submit-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit{
+    background-color: transparent;
+    border: 1px solid rgb(125, 74, 180) ;
+    color: rgb(125, 74, 180) ;
+    width: fit-content;
+    margin: 20px 0;
+    font-family: 'Poppins',sans-serif;
+    padding: 10px 20px ;
+    border-radius: 3px;
+    transition: text-shadow 1s , color 0.9s;
+}
+
+.submit:hover{
+    transition: text-shadow 1s , color 0.9s;
+    color: aliceblue;
+    text-shadow: 2px 2px 10px white,2px 2px 30px rgb(125, 74, 180);
 }
 
 .socials ul{
