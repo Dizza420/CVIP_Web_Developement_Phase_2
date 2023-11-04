@@ -32,7 +32,7 @@ html{
     
 }
 body{
-    background-image: linear-gradient(to top,rgba(21, 8, 27, 0.514),rgba(21, 8, 27, 0.514)),url("/assets/alexander-andrews-fsH1KjbdjE8-unsplash.jpg");
+    background-image: linear-gradient(to top,rgba(21, 8, 27, 0.514),rgba(21, 8, 27, 0.514)),URL("../assets/alexander-andrews-fsH1KjbdjE8-unsplash.jpg");
     background-size:100%;
     background-attachment:fixed ;
     overflow-x: hidden;
